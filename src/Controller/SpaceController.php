@@ -10,6 +10,8 @@ class SpaceController
 {
     public function create(ServerRequest $request)
     {
+
+
         return json([]);
     }
 

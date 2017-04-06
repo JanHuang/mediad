@@ -1,4 +1,3 @@
-
 <?php
 
 use FastD\Model\Migration;
@@ -13,6 +12,15 @@ class Medias extends Migration
     {
         $table = $this->table('medias');
 
+        $table
+            ->addColumn('title', 'string')
+            ->addColumn('path', 'string', ['limit' => 200])
+            ->addColumn('size', 'integer')
+            ->addColumn('type', 'string')
+            ->addColumn('created', 'datetime')
+            ->addColumn('updated', 'datetime')
+        ;
+
         return $table;
     }
     
@@ -23,6 +31,6 @@ class Medias extends Migration
      */
     public function dataSet(Table $table)
     {
-        
+
     }
 }

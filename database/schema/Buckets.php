@@ -1,4 +1,3 @@
-
 <?php
 
 use FastD\Model\Migration;
@@ -12,6 +11,12 @@ class Buckets extends Migration
     public function setUp()
     {
         $table = $this->table('buckets');
+
+        $table
+            ->addColumn('title', 'string')
+            ->addColumn('created', 'datetime')
+            ->addColumn('updated', 'datetime')
+        ;
 
         return $table;
     }

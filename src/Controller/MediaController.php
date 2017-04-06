@@ -10,7 +10,17 @@ class MediaController
 {
     public function create(ServerRequest $request)
     {
-        return json([]);
+        $driver = config()->get('media.driver');
+        //
+        $driver = new $driver($request);
+
+        $bucket = $request->getParsedBody()['bucket'];
+
+        $path = $driver->moveTo($bucket);
+
+        return json([
+            'url' => $path,
+        ]);
     }
 
     public function patch(ServerRequest $request)

@@ -9,6 +9,9 @@
 
 return [
     'media' => [
-        'driver' => '',
+        'driver' => \Adapter\LocalDriver::class,
+        'options' => [
+            'path' => app()->getPath() . '/web/uploaded',
+        ]
     ]
 ];

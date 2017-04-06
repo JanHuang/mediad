@@ -11,7 +11,7 @@ return [
     /**
      * The application name.
      */
-    'name' => 'dobee',
+    'name' => 'mediad',
 
     /**
      * Application environment local/dev/prod
@@ -42,7 +42,7 @@ return [
      * Application Consoles
      */
     'consoles' => [
-        \Console\DemoConsole::class,
+
     ],
 
     /**

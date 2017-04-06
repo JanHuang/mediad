@@ -8,5 +8,7 @@
  */
 
 return [
-
+    'media' => [
+        'driver' => '',
+    ]
 ];

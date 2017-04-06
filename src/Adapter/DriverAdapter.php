@@ -10,9 +10,23 @@
 namespace Adapter;
 
 
+use FastD\Http\ServerRequest;
+
 abstract class DriverAdapter
 {
     const DEFAULT_NAME = 'attachment';
+
+    protected $request;
+
+    public function __construct(ServerRequest $request)
+    {
+        $this->request = $request;
+    }
+
+    public function getAttachment()
+    {
+        return $this->request->uploadFile[static::DEFAULT_NAME];
+    }
 
     abstract public function moveTo($bucket);
 }

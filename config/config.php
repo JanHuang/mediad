@@ -9,9 +9,10 @@
 
 return [
     'media' => [
-        'driver' => \Adapter\LocalDriver::class,
+        'driver' => \Adapter\QiNiu::class,
         'options' => [
-            'path' => app()->getPath() . '/web/uploaded',
+            'app_key' => 'MItHJhSPsrGZfR_8TmaZk6Ttqxv98J0Y2EjDKXAE',
+            'app_secret' => 'hAyKdeN-BK7-YOxYXnxeUUNgGG9K2dagoBQx5Qyt',
         ]
     ]
 ];

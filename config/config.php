@@ -9,10 +9,11 @@
 
 return [
     'media' => [
-        'driver' => \Adapter\QiNiu::class,
+        'driver' => \Adapter\AliOSS::class,
         'options' => [
             'app_key' => 'MItHJhSPsrGZfR_8TmaZk6Ttqxv98J0Y2EjDKXAE',
             'app_secret' => 'hAyKdeN-BK7-YOxYXnxeUUNgGG9K2dagoBQx5Qyt',
+            'endpoint' => 'demo-d.oss-cn-shanghai.aliyuncs.com',
         ]
     ]
 ];

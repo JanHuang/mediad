@@ -12,6 +12,7 @@ namespace Adapter;
 
 use FastD\Http\ServerRequest;
 use Qiniu\Auth;
+use Qiniu\Storage\BucketManager;
 use Qiniu\Storage\UploadManager;
 
 class QiNiu extends DriverAdapter
@@ -28,7 +29,18 @@ class QiNiu extends DriverAdapter
     public function moveTo($bucket)
     {
         $upManager = new UploadManager();
-        $token = $this->auth->uploadToken($bucket);
-        list($ret, $error) = $upManager->put($token, 'formput', 'hello world');
+        $opts = array(
+            'callbackBody' => 'name=$(fname)&hash=$(etag)'
+        );
+        $token = $this->auth->uploadToken($bucket, null, 3600, $opts);
+        list($ret, $error) = $upManager->putFile(
+            $token,
+            $this->getAttachment()->getPostFilename(),
+            $this->getAttachment()->getFilename()
+        );
+        if (null == $ret) {
+            throw new \LogicException($error->getResponse()->error);
+        }
+        return $ret;
     }
 }

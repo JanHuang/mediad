@@ -10,13 +10,11 @@
 namespace Adapter;
 
 
-use FastD\Http\ServerRequest;
-
 /**
  * Class LocalDriver
  * @package Adapter
  */
-class LocalDriver extends DriverAdapter
+class Local extends DriverAdapter
 {
     /**
      * @param $bucket

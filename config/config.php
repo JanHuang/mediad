@@ -11,9 +11,9 @@ return [
     'media' => [
         'driver' => \Adapter\AliOSS::class,
         'options' => [
-            'app_key' => '',
-            'app_secret' => '',
-            'endpoint' => 'demo-d.oss-cn-shanghai.aliyuncs.com',
+            'app_key' => env('app_key'),
+            'app_secret' => env('app_secret'),
+            'endpoint' => env('endpoint'),
         ]
     ]
 ];

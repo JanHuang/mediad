@@ -5,7 +5,7 @@ namespace Model;
 
 use FastD\Model\Model;
 
-class MediaModel extends Model
+class MediasModel extends Model
 {
     const TABLE = 'medias';
     const LIMIT = '15';
@@ -40,6 +40,8 @@ class MediaModel extends Model
 
     public function create(array $data)
     {
+        $data['created'] = date('Y-m-d H:i:s');
+
         $id = $this->db->insert(static::TABLE, $data);
 
         return $this->find($id);

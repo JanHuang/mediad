@@ -12,10 +12,10 @@ route()->group('/api', function () {
     route()->get('/drivers/{id}', 'DriversController@find');
     route()->patch('/drivers/{id}', 'DriversController@patch');
     route()->delete('/drivers/{id}', 'DriversController@delete');
-    
-    route()->get('/medias', 'MediaController@select');
-    route()->get('/medias/{id}', 'MediaController@find');
-    route()->post('/medias', 'MediaController@create');
-    route()->patch('/medias/{id}', 'MediaController@patch');
-    route()->delete('/medias/{id}', 'MediaController@delete');
+
+    route()->get('/medias', 'MediasController@select');
+    route()->get('/medias/{id}', 'MediasController@find');
+    route()->post('/medias', 'MediasController@create');
+    route()->patch('/medias/{id}', 'MediasController@patch');
+    route()->delete('/medias/{id}', 'MediasController@delete');
 });

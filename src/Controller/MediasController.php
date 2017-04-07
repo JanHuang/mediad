@@ -6,7 +6,7 @@ namespace Controller;
 use FastD\Http\Response;
 use FastD\Http\ServerRequest;
 
-class MediaController
+class MediasController
 {
     public function create(ServerRequest $request)
     {
@@ -18,9 +18,13 @@ class MediaController
 
         $path = $driver->moveTo($bucket);
 
-        return json([
+        $media = model('medias')->create([
             'url' => $path,
+            'bucket' => $bucket,
+            'title' => $request->getParsedBody()['title'],
         ]);
+
+        return json($media);
     }
 
     public function patch(ServerRequest $request)

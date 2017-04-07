@@ -16,7 +16,7 @@ class Medias extends Migration
             ->addColumn('bucket', 'string', ['limit' => 60])
             ->addColumn('driver_id', 'integer')
             ->addColumn('title', 'string')
-            ->addColumn('path', 'string', ['limit' => 200])
+            ->addColumn('url', 'string', ['limit' => 200])
             ->addColumn('size', 'integer')
             ->addColumn('type', 'string')
             ->addColumn('created', 'datetime')

@@ -14,6 +14,8 @@ class Buckets extends Migration
 
         $table
             ->addColumn('title', 'string')
+            ->addColumn('driver_id', 'integer')
+            ->addColumn('url', 'string', ['limit' => 100])
             ->addColumn('created', 'datetime')
             ->addColumn('updated', 'datetime')
         ;

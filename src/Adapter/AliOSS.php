@@ -21,6 +21,7 @@ class AliOSS extends DriverAdapter
         if (OSS::publicUpload($bucket, $this->getAttachment()->getPostFilename(), $this->getAttachment()->getFilename())) {
             return 'http://' . config()->get('media.options.endpoint') . '/' . $this->getAttachment()->getPostFilename();
         }
+
         $ossClient = new OssClient(
             config()->get('media.options.app_key'),
             config()->get('media.options.app_secret'),

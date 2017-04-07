@@ -29,6 +29,7 @@ class DriversModel extends Model
 
     public function patch($id, array $data)
     {
+        $data['updated'] = date('Y-m-d H:i:s');
         $affected = $this->db->update(static::TABLE, $data, [
             'OR' => [
                 'id' => $id,
@@ -40,12 +41,14 @@ class DriversModel extends Model
 
     public function create(array $data)
     {
+        $data['created'] = date('Y-m-d H:i:s');
+
         $id = $this->db->insert(static::TABLE, $data);
 
         return $this->find($id);
     }
 
-    public function deleteUser($id)
+    public function delete($id)
     {
         return $this->db->delete(static::TABLE, [
             'id' => $id

@@ -14,7 +14,7 @@ class Medias extends Migration
 
         $table
             ->addColumn('bucket', 'string', ['limit' => 60])
-            ->addColumn('driver_id', 'string', ['limit' => 60])
+            ->addColumn('driver_id', 'integer')
             ->addColumn('title', 'string')
             ->addColumn('path', 'string', ['limit' => 200])
             ->addColumn('size', 'integer')

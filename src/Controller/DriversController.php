@@ -10,26 +10,38 @@ class DriversController
 {
     public function create(ServerRequest $request)
     {
-        return json([]);
+        $driver = model('drivers')->create($request->getParsedBody());
+
+        return json($driver, Response::HTTP_CREATED);
     }
 
     public function patch(ServerRequest $request)
     {
-        return json([]);
+        parse_str($request->getBody(), $data);
+
+        $driver = model('drivers')->patch($request->getAttribute('id'), $data);
+
+        return json($driver);
     }
 
     public function delete(ServerRequest $request)
     {
-        return json([]);
+        model('drivers')->delete($request->getAttribute('id'));
+
+        return json([], Response::HTTP_NO_CONTENT);
     }
 
     public function find(ServerRequest $request)
     {
-        return json([]);
+        $driver = model('drivers')->find($request->getAttribute('id'));
+
+        return json($driver);
     }
 
     public function select(ServerRequest $request)
     {
-        return json([]);
+        $drivers = model('drivers')->select();
+
+        return json($drivers);
     }
 }

@@ -10,26 +10,38 @@ class BucketsController
 {
     public function create(ServerRequest $request)
     {
-        return json([]);
+        $bucket = model('buckets')->create($request->getParsedBody());
+
+        return json($bucket, Response::HTTP_CREATED);
     }
 
     public function patch(ServerRequest $request)
     {
-        return json([]);
+        parse_str($request->getBody(), $data);
+
+        $bucket = model('buckets')->patch($request->getAttribute('id'), $data);
+
+        return json($bucket);
     }
 
     public function delete(ServerRequest $request)
     {
-        return json([]);
+        model('buckets')->delete($request->getAttribute('id'));
+
+        return json([], Response::HTTP_NO_CONTENT);
     }
 
     public function find(ServerRequest $request)
     {
-        return json([]);
+        $bucket = model('buckets')->find($request->getAttribute('id'));
+
+        return json($bucket);
     }
 
     public function select(ServerRequest $request)
     {
-        return json([]);
+        $buckets = model('buckets')->select();
+
+        return json($buckets);
     }
 }

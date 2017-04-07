@@ -31,6 +31,6 @@ class Driver extends Migration
      */
     public function dataSet(Table $table)
     {
-        
+
     }
 }

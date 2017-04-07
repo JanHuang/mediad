@@ -5,9 +5,9 @@ namespace Model;
 
 use FastD\Model\Model;
 
-class SpaceModel extends Model
+class DriversModel extends Model
 {
-    const TABLE = 'space';
+    const TABLE = 'drivers';
     const LIMIT = '15';
 
     public function select($page = 1)

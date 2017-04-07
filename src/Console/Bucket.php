@@ -18,7 +18,7 @@ class Bucket extends Command
 {
     public function configure()
     {
-
+        $this->setName('buckets');
     }
 
     public function execute(InputInterface $input, OutputInterface $output)

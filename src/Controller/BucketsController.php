@@ -6,12 +6,10 @@ namespace Controller;
 use FastD\Http\Response;
 use FastD\Http\ServerRequest;
 
-class SpaceController
+class BucketsController
 {
     public function create(ServerRequest $request)
     {
-
-
         return json([]);
     }
 

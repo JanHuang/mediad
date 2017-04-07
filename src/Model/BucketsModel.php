@@ -5,9 +5,9 @@ namespace Model;
 
 use FastD\Model\Model;
 
-class MediaModel extends Model
+class BucketsModel extends Model
 {
-    const TABLE = 'medias';
+    const TABLE = 'Buckets';
     const LIMIT = '15';
 
     public function select($page = 1)

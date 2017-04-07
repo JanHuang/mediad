@@ -1,24 +1,22 @@
+
 <?php
 
 use FastD\Model\Migration;
 use Phinx\Db\Table;
 
-class Medias extends Migration
+class Driver extends Migration
 {
     /**
      * @return Table
      */
     public function setUp()
     {
-        $table = $this->table('medias');
+        $table = $this->table('drivers');
 
         $table
-            ->addColumn('bucket', 'string', ['limit' => 60])
-            ->addColumn('driver_id', 'string', ['limit' => 60])
-            ->addColumn('title', 'string')
-            ->addColumn('path', 'string', ['limit' => 200])
-            ->addColumn('size', 'integer')
-            ->addColumn('type', 'string')
+            ->addColumn('title', 'string', ['limit' => 60])
+            ->addColumn('app_key', 'string', ['limit' => 100])
+            ->addColumn('app_secret', 'string', ['limit' => 100])
             ->addColumn('created', 'datetime')
             ->addColumn('updated', 'datetime')
         ;
@@ -33,6 +31,6 @@ class Medias extends Migration
      */
     public function dataSet(Table $table)
     {
-
+        
     }
 }

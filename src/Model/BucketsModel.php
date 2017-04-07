@@ -7,7 +7,7 @@ use FastD\Model\Model;
 
 class BucketsModel extends Model
 {
-    const TABLE = 'Buckets';
+    const TABLE = 'buckets';
     const LIMIT = '15';
 
     public function select($page = 1)
@@ -29,6 +29,7 @@ class BucketsModel extends Model
 
     public function patch($id, array $data)
     {
+        $data['updated'] = date('Y-m-d H:i:s');
         $affected = $this->db->update(static::TABLE, $data, [
             'OR' => [
                 'id' => $id,
@@ -40,6 +41,8 @@ class BucketsModel extends Model
 
     public function create(array $data)
     {
+        $data['created'] = date('Y-m-d H:i:s');
+
         $id = $this->db->insert(static::TABLE, $data);
 
         return $this->find($id);

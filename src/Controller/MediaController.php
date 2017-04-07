@@ -25,21 +25,31 @@ class MediaController
 
     public function patch(ServerRequest $request)
     {
-        return json([]);
+        parse_str($request->getBody(), $data);
+
+        $media = model('medias')->patch($request->getAttribute('id'), $data);
+
+        return json($media);
     }
 
     public function delete(ServerRequest $request)
     {
-        return json([]);
+        model('medias')->delete($request->getAttribute('id'));
+
+        return json([], Response::HTTP_NO_CONTENT);
     }
 
     public function find(ServerRequest $request)
     {
-        return json([]);
+        $media = model('medias')->find($request->getAttribute('id'));
+
+        return json($media);
     }
 
     public function select(ServerRequest $request)
     {
-        return json([]);
+        $medias = model('medias')->select();
+
+        return json($medias);
     }
 }

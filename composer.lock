@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2c050b3b5216409ef7ce42b6760073ee",
-    "content-hash": "64643d34e1581cce09fde9ee998d89e9",
+    "hash": "543cd054ec78b67d163c71f06ab7a983",
+    "content-hash": "407a2daf24f1d72232b6c341a042af08",
     "packages": [
         {
             "name": "aliyuncs/oss-sdk-php",
@@ -238,12 +238,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "bcf040f62d5efbe1732d0fe1cc236f4b41f9d5b7"
+                "reference": "22f546bb30c080084dc772d0b1eb2bd0cb290e79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/bcf040f62d5efbe1732d0fe1cc236f4b41f9d5b7.zip",
-                "reference": "bcf040f62d5efbe1732d0fe1cc236f4b41f9d5b7",
+                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/22f546bb30c080084dc772d0b1eb2bd0cb290e79.zip",
+                "reference": "22f546bb30c080084dc772d0b1eb2bd0cb290e79",
                 "shasum": ""
             },
             "require": {
@@ -294,20 +294,20 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-04-06 09:16:02"
+            "time": "2017-04-11 12:11:49"
         },
         {
             "name": "fastd/http",
-            "version": "v3.0.9",
+            "version": "v3.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/http.git",
-                "reference": "3b0b5619126df833033f7fa114f22200f5e260da"
+                "reference": "3d2f2472f230e18d69d4d791c060aa770b839c9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/http/3b0b5619126df833033f7fa114f22200f5e260da.zip",
-                "reference": "3b0b5619126df833033f7fa114f22200f5e260da",
+                "url": "https://files.phpcomposer.com/files/JanHuang/http/3d2f2472f230e18d69d4d791c060aa770b839c9c.zip",
+                "reference": "3d2f2472f230e18d69d4d791c060aa770b839c9c",
                 "shasum": ""
             },
             "require": {
@@ -338,7 +338,7 @@
                 "FastD",
                 "http"
             ],
-            "time": "2017-04-06 08:36:51"
+            "time": "2017-04-10 15:05:17"
         },
         {
             "name": "fastd/middleware",

@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "aliyuncs/oss-sdk-php",
-            "version": "v2.2.2",
+            "version": "v2.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aliyun/aliyun-oss-php-sdk.git",
-                "reference": "28ec53756dba73cca89d3c2131bb44626ce25ab3"
+                "reference": "8853812991abeb81c53a23c5d150e00d6c060f39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/aliyun/aliyun-oss-php-sdk/28ec53756dba73cca89d3c2131bb44626ce25ab3.zip",
-                "reference": "28ec53756dba73cca89d3c2131bb44626ce25ab3",
+                "url": "https://files.phpcomposer.com/files/aliyun/aliyun-oss-php-sdk/8853812991abeb81c53a23c5d150e00d6c060f39.zip",
+                "reference": "8853812991abeb81c53a23c5d150e00d6c060f39",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,7 @@
             ],
             "description": "Aliyun OSS SDK for PHP",
             "homepage": "http://www.aliyun.com/product/oss/",
-            "time": "2017-01-18 08:56:15"
+            "time": "2017-04-14 08:05:28"
         },
         {
             "name": "catfan/medoo",
@@ -238,12 +238,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "22f546bb30c080084dc772d0b1eb2bd0cb290e79"
+                "reference": "14284e457091cfac42a3f2f5eeaabc4ed154ff2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/22f546bb30c080084dc772d0b1eb2bd0cb290e79.zip",
-                "reference": "22f546bb30c080084dc772d0b1eb2bd0cb290e79",
+                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/14284e457091cfac42a3f2f5eeaabc4ed154ff2d.zip",
+                "reference": "14284e457091cfac42a3f2f5eeaabc4ed154ff2d",
                 "shasum": ""
             },
             "require": {
@@ -294,7 +294,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-04-11 12:11:49"
+            "time": "2017-04-15 00:41:41"
         },
         {
             "name": "fastd/http",
@@ -505,16 +505,16 @@
         },
         {
             "name": "fastd/testing",
-            "version": "v0.3.0",
+            "version": "v0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/testing.git",
-                "reference": "d74e68d54c28713215d87b7b518ddb9da98676ad"
+                "reference": "a1f331b90f2e2fecdd84a12102c8ad88186b5609"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/testing/d74e68d54c28713215d87b7b518ddb9da98676ad.zip",
-                "reference": "d74e68d54c28713215d87b7b518ddb9da98676ad",
+                "url": "https://files.phpcomposer.com/files/JanHuang/testing/a1f331b90f2e2fecdd84a12102c8ad88186b5609.zip",
+                "reference": "a1f331b90f2e2fecdd84a12102c8ad88186b5609",
                 "shasum": ""
             },
             "require": {
@@ -537,7 +537,7 @@
                     "email": "bboyjanhuang@gmail.com"
                 }
             ],
-            "time": "2017-04-05 10:31:46"
+            "time": "2017-04-14 17:13:12"
         },
         {
             "name": "fastd/utils",
@@ -1421,16 +1421,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "5a5a9fc8025a08d8919be87d6884d5a92520cefe"
+                "reference": "8e6e04167378abf1ddb4d3522d8755c5fd90d102"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/5a5a9fc8025a08d8919be87d6884d5a92520cefe",
-                "reference": "5a5a9fc8025a08d8919be87d6884d5a92520cefe",
+                "url": "https://files.phpcomposer.com/files/myclabs/DeepCopy/8e6e04167378abf1ddb4d3522d8755c5fd90d102.zip",
+                "reference": "8e6e04167378abf1ddb4d3522d8755c5fd90d102",
                 "shasum": ""
             },
             "require": {
@@ -1459,7 +1459,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2017-01-26 22:05:40"
+            "time": "2017-04-12 18:52:22"
         },
         {
             "name": "phpdocumentor/reflection-common",

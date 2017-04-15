@@ -14,11 +14,6 @@ return [
     'name' => 'mediad',
 
     /**
-     * Application environment local/dev/prod
-     */
-    'environment' => 'prod',
-
-    /**
      * Application timezone
      */
     'timezone' => 'PRC',
@@ -27,13 +22,16 @@ return [
      * Application logger path
      */
     'log' => [
-        \Monolog\Handler\StreamHandler::class, // 错误日志
+        [\Monolog\Handler\StreamHandler::class, 'error.log', \Monolog\Logger::ERROR]
     ],
 
     /**
      * Bootstrap service.
      */
     'services' => [
+        \FastD\ServiceProvider\ConfigServiceProvider::class,
+        \FastD\ServiceProvider\RouteServiceProvider::class,
+        \FastD\ServiceProvider\LoggerServiceProvider::class,
         \FastD\ServiceProvider\DatabaseServiceProvider::class,
         \FastD\ServiceProvider\CacheServiceProvider::class,
     ],

@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "543cd054ec78b67d163c71f06ab7a983",
-    "content-hash": "407a2daf24f1d72232b6c341a042af08",
+    "hash": "13481657acb0dca5aaecc26bd8722a77",
+    "content-hash": "abd5986437004ad5f91fdda1f6c5ebb0",
     "packages": [
         {
             "name": "aliyuncs/oss-sdk-php",
-            "version": "v2.2.3",
+            "version": "v2.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aliyun/aliyun-oss-php-sdk.git",
-                "reference": "8853812991abeb81c53a23c5d150e00d6c060f39"
+                "reference": "0b9b85b6c5c38cfc4ef3b0205a5a62d1e36acf2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/aliyun/aliyun-oss-php-sdk/8853812991abeb81c53a23c5d150e00d6c060f39.zip",
-                "reference": "8853812991abeb81c53a23c5d150e00d6c060f39",
+                "url": "https://files.phpcomposer.com/files/aliyun/aliyun-oss-php-sdk/0b9b85b6c5c38cfc4ef3b0205a5a62d1e36acf2e.zip",
+                "reference": "0b9b85b6c5c38cfc4ef3b0205a5a62d1e36acf2e",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,7 @@
             ],
             "description": "Aliyun OSS SDK for PHP",
             "homepage": "http://www.aliyun.com/product/oss/",
-            "time": "2017-04-14 08:05:28"
+            "time": "2017-04-25 09:15:12"
         },
         {
             "name": "catfan/medoo",
@@ -234,16 +234,16 @@
         },
         {
             "name": "fastd/fastd",
-            "version": "3.1.x-dev",
+            "version": "v3.1.0-rc3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "a9366968a1785830b88a414b86a0c3f12893da75"
+                "reference": "8d68fd2f09e8a7f33f801c0c45a66e940a44b353"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/a9366968a1785830b88a414b86a0c3f12893da75.zip",
-                "reference": "a9366968a1785830b88a414b86a0c3f12893da75",
+                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/8d68fd2f09e8a7f33f801c0c45a66e940a44b353.zip",
+                "reference": "8d68fd2f09e8a7f33f801c0c45a66e940a44b353",
                 "shasum": ""
             },
             "require": {
@@ -294,20 +294,20 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-04-17 14:54:33"
+            "time": "2017-04-20 15:01:19"
         },
         {
             "name": "fastd/http",
-            "version": "v3.0.10",
+            "version": "v3.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/http.git",
-                "reference": "3d2f2472f230e18d69d4d791c060aa770b839c9c"
+                "reference": "dbce3423545759d23712fb7f56063dfa09492854"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/http/3d2f2472f230e18d69d4d791c060aa770b839c9c.zip",
-                "reference": "3d2f2472f230e18d69d4d791c060aa770b839c9c",
+                "url": "https://files.phpcomposer.com/files/JanHuang/http/dbce3423545759d23712fb7f56063dfa09492854.zip",
+                "reference": "dbce3423545759d23712fb7f56063dfa09492854",
                 "shasum": ""
             },
             "require": {
@@ -338,7 +338,7 @@
                 "FastD",
                 "http"
             ],
-            "time": "2017-04-10 15:05:17"
+            "time": "2017-04-18 14:45:54"
         },
         {
             "name": "fastd/middleware",
@@ -416,16 +416,16 @@
         },
         {
             "name": "fastd/routing",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/routing.git",
-                "reference": "21cd85c4c5ae585de26b3d6459d91634942bd6ce"
+                "reference": "c31aa9e4db4cd71ef5894460e59ddfd7df2fda11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/routing/zipball/21cd85c4c5ae585de26b3d6459d91634942bd6ce",
-                "reference": "21cd85c4c5ae585de26b3d6459d91634942bd6ce",
+                "url": "https://files.phpcomposer.com/files/JanHuang/routing/c31aa9e4db4cd71ef5894460e59ddfd7df2fda11.zip",
+                "reference": "c31aa9e4db4cd71ef5894460e59ddfd7df2fda11",
                 "shasum": ""
             },
             "require": {
@@ -456,20 +456,20 @@
             "keywords": [
                 "routing"
             ],
-            "time": "2017-03-10 07:46:11"
+            "time": "2017-04-26 02:47:48"
         },
         {
             "name": "fastd/swoole",
-            "version": "v2.0.0-beta2",
+            "version": "v2.0.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/swoole.git",
-                "reference": "9b2ece4aae0fde3dad5f308a2f3aa5951dd5e2f4"
+                "reference": "05803f2a82266fe790b2cbe3939e3a3ec15e71df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/swoole/9b2ece4aae0fde3dad5f308a2f3aa5951dd5e2f4.zip",
-                "reference": "9b2ece4aae0fde3dad5f308a2f3aa5951dd5e2f4",
+                "url": "https://files.phpcomposer.com/files/JanHuang/swoole/05803f2a82266fe790b2cbe3939e3a3ec15e71df.zip",
+                "reference": "05803f2a82266fe790b2cbe3939e3a3ec15e71df",
                 "shasum": ""
             },
             "require": {
@@ -501,20 +501,20 @@
                 }
             ],
             "description": "FastD swoole.",
-            "time": "2017-04-01 15:43:54"
+            "time": "2017-04-27 03:12:13"
         },
         {
             "name": "fastd/testing",
-            "version": "v0.3.3",
+            "version": "v0.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/testing.git",
-                "reference": "0e16733d771295c81bd00d0d53389230dfaf4eb7"
+                "reference": "e7c5f203740fd09997b166ce3a4afbfb4b8a0c68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/testing/0e16733d771295c81bd00d0d53389230dfaf4eb7.zip",
-                "reference": "0e16733d771295c81bd00d0d53389230dfaf4eb7",
+                "url": "https://files.phpcomposer.com/files/JanHuang/testing/e7c5f203740fd09997b166ce3a4afbfb4b8a0c68.zip",
+                "reference": "e7c5f203740fd09997b166ce3a4afbfb4b8a0c68",
                 "shasum": ""
             },
             "require": {
@@ -537,20 +537,20 @@
                     "email": "bboyjanhuang@gmail.com"
                 }
             ],
-            "time": "2017-04-16 14:49:25"
+            "time": "2017-04-19 01:59:07"
         },
         {
             "name": "fastd/utils",
-            "version": "v0.1.0",
+            "version": "v0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/utils.git",
-                "reference": "e110c1e8e137d401ae7f0592058aa38db5e2f072"
+                "reference": "a83a7def05ff0a42f0f3f8f926d3311e96ad8d39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/utils/zipball/e110c1e8e137d401ae7f0592058aa38db5e2f072",
-                "reference": "e110c1e8e137d401ae7f0592058aa38db5e2f072",
+                "url": "https://files.phpcomposer.com/files/JanHuang/utils/a83a7def05ff0a42f0f3f8f926d3311e96ad8d39.zip",
+                "reference": "a83a7def05ff0a42f0f3f8f926d3311e96ad8d39",
                 "shasum": ""
             },
             "require": {
@@ -575,7 +575,7 @@
                     "email": "bboyjanhuang@gmail.com"
                 }
             ],
-            "time": "2017-03-18 04:11:43"
+            "time": "2017-04-21 15:03:36"
         },
         {
             "name": "johnlui/aliyun-oss",
@@ -2682,7 +2682,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fastd/fastd": 20,
+        "fastd/fastd": 10,
         "fastd/swoole": 10
     },
     "prefer-stable": false,
